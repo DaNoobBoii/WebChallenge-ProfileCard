@@ -1,0 +1,123 @@
+:root {
+    /* Primary */
+    --dark-cyan: hsl(185, 75%, 39%);
+    --dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+
+    /* Neutral */
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+body {
+    font-family: Kumbh Sans;
+    background-color: var(--dark-cyan);
+    background-image: url(img/bg-pattern-top.svg), url(img/bg-pattern-bottom.svg) !important;
+    background-position: bottom -68vh right 52vw, top 50vh left 48vw;
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* card */
+.card {
+    height: 420px;
+    width: 380px;
+    position: absolute;
+    background-color: white;
+    border-radius: 15px;
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.cardBg {
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    border-radius: 10px 10px 0 0;
+}
+
+.userAvatar {
+    width: 6em;
+    top: 26%;
+    position: relative;
+    display: block;
+    z-index: 3;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.content {
+    position: relative;
+    top: 30%;
+    color: var(--dark-desaturated-blue);
+}
+
+.userName {
+    text-align: center;
+}
+
+.userName span {
+    font-weight: 200;
+    padding: 0 0 0 16px;
+}
+
+.country {
+    text-align: center;
+    font-weight: 200;
+    color: var(--dark-gray);
+    padding: 10px 0 24px 0;
+}
+
+.stats {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    color: var(--dark-desaturated-blue);
+    padding: 24px 0 0 0;
+}
+
+.stats h2 {
+    font-weight: 700;
+    font-size: 21px;
+}
+
+@media screen and (max-width:375px) {
+    .card {
+        height: 420px;
+        width: 380px;
+        position: absolute;
+        background-color: white;
+        border-radius: 15px;
+        margin: auto;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+}
+
+/* card */
+
+/* copyleft */
+.copyleft {
+    padding: 50px 0 0 0;
+    text-align: center;
+    color: #f5f5f5;
+    font-weight: bold;
+}
+
+/* copyleft */
